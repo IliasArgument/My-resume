@@ -10,6 +10,9 @@ body {
 .main_container {
     display: flex;
     background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 }
 
 .main_aside {
@@ -149,6 +152,7 @@ color:#252038;
 
 .dots {
     color:#252038;
+    font-weight: 100;
 }
 .project_item {
 font-weight: 700;
@@ -184,6 +188,7 @@ line-height: 24px;
 .github {
     padding-top: 30px;
     display: flex;
+    align-items: center;
 }
 .git_img {
     margin-left: 30px;
