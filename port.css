@@ -1,34 +1,37 @@
 body {
-    margin: 0;
-    padding: 0;
+    padding: 15px;
+    margin: 0 auto;
     box-sizing: border-box;
     font-family: 'Montserrat';
-    background-color: #e0e5ee;
-    padding: 20px;
+    background: #d7e0ec;
 }
 
 .main_container {
     display: flex;
     background-color: #fff;
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+
 }
 
 .main_aside {
-    width: 340px;
-    height: 1200px;
+    position: relative;
+    max-width: 340px;
+    min-height: 100vh;
     background-color: #1e2939;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
 .main_src {
-    width: 340px;
+    max-width: 340px;
 }
 
 .about_me_container {
     padding: 90px 110px;
+    max-width: 100%;
+    margin: 10px;
 }
 
 .contacts_container {
@@ -95,6 +98,7 @@ body {
     margin-left: 40px;
     margin-top: 50px;
 }
+
 .soft_skills_item {
     font-size: 14px;
     font-weight: 500;
@@ -102,62 +106,74 @@ body {
     color: #ff6b08;
     margin-left: -20px;
 }
+
 .soft_skills_text {
     color: white;
 }
+
 .about_me_title {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 900;
     line-height: 26px;
-    color:black;
+    color: black;
 }
+
 .user {
-    color:#ff6b08;
+    color: #ff6b08;
 }
-.about_me_name{
+
+.about_me_name {
     font-size: 45px;
     font-weight: 700;
     line-height: 89px;
-    color:black;
+    color: black;
     margin-top: -10px;
 }
+
 .about_me_text {
     font-size: 14px;
-font-weight: 400;
-line-height: 24px;
-margin-top: -10px;
-color:#252038;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: -10px;
+    color: #252038;
 }
+
 .project_container {
     margin-top: 60px;
 }
+
 .project_container_title {
     font-size: 22px;
     font-weight: 700;
     line-height: 24px;
     margin-bottom: 10px;
 }
+
 .projects_list {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-    color:#252038;
+    color: #252038;
 }
+
 .tech_name {
     font-size: 14px;
-font-weight: 400;
-line-height: 24px;
-color:#252038;
+    font-weight: 400;
+    line-height: 24px;
+    color: #252038;
 }
 
 .dots {
-    color:#252038;
+    color: #252038;
     font-weight: 100;
 }
+
 .project_item {
-font-weight: 700;
-margin-left: -25px;
+    font-weight: 700;
+    margin-left: -25px;
+    line-height: 30px;
 }
+
 .education_me {
     font-size: 22px;
     font-weight: 700;
@@ -167,18 +183,21 @@ margin-left: -25px;
 .education_team {
     padding-top: 100px;
 }
+
 .universitet {
     font-size: 16px;
-font-weight: 700;
-line-height: 24px;
+    font-weight: 700;
+    line-height: 24px;
     color: #ff6b08;
 }
+
 .profeshion {
     margin-top: -10px;
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
 }
+
 .time {
     font-size: 12px;
     font-weight: 400;
@@ -190,6 +209,111 @@ line-height: 24px;
     display: flex;
     align-items: center;
 }
+
 .git_img {
     margin-left: 30px;
 }
+
+@media screen and (max-width: 1260px) {
+
+    .main_container {
+        max-width: 100vw;
+        margin: 0 auto;
+    }
+
+    .main_aside {
+        width: 100%;
+        min-height: 100%;
+
+    }
+
+    .main_src {
+        max-width: 100%;
+    }
+
+    .about_me_container {
+        padding: 40px 70px;
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .about_me_title {
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 26px;
+        margin: 12px 0;
+    }
+
+    .about_me_name {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 89px;
+        color: black;
+        margin: 10px;
+    }
+
+    .about_me_text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+
+    body {
+        background: #fff;
+    }
+   
+    .main_container {
+
+        max-width: 100%;
+        margin: 0 auto;
+        box-shadow: none;
+    }
+
+    .main_aside {
+        width: 100%;
+        min-height: 100%;
+
+    }
+
+    .main_src {
+        max-width: 100%;
+    }
+
+    .about_me_container {
+        max-width: 100vw;
+    }
+
+    .about_me_container {
+        padding: 20px 30px;
+        max-width: 100%;
+        margin: 5px;
+    }
+
+    .about_me_title {
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 26px;
+        margin: 12px 12px;
+    }
+
+    .about_me_name {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 35px;
+        color: black;
+        margin: 10px;
+    }
+
+    .about_me_text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 10px;
+    }
+}
+
